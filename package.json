@@ -1,0 +1,18 @@
+{
+  "name": "primer-ejemplo-react",
+  "version": "1.0.0",
+  "description": "Primer proyecto con react",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "author": "Alejandro Ruiz Prieto",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
