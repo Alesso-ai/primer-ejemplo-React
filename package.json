@@ -4,7 +4,7 @@
   "description": "Primer proyecto con react",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel ./src/index.html --open",
     "lint": "eslint --fix ./index.jsx",
     "format": "prettier --write \"*.{js,jsx,json,css}\""
   },
