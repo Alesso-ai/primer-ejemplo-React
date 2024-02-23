@@ -2597,7 +2597,7 @@ var wishes = [{
   text: "Buy a dog",
   done: false
 }, {
-  text: "Learn to play the guitar",
+  text: "Learn to mamporrero",
   done: false
 }, {
   text: "Get a job",
@@ -2605,7 +2605,7 @@ var wishes = [{
 }];
 function App() {
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "wish-input"
+    className: "app"
   }, /*#__PURE__*/_react.default.createElement("h1", null, "My wishes"), /*#__PURE__*/_react.default.createElement("fieldset", {
     className: "wish-input"
   }, /*#__PURE__*/_react.default.createElement("legend", {
@@ -2622,8 +2622,14 @@ function App() {
       done = _ref.done;
     return /*#__PURE__*/_react.default.createElement("li", {
       key: text,
-      className: "wish-list__item ".concat(done ? 'wish-list__item--done' : '')
-    });
+      className: "wish-list__item ".concat(done ? "wish-list__item--done" : "")
+    }, /*#__PURE__*/_react.default.createElement("input", {
+      id: "wish".concat(i),
+      type: "checkbox",
+      checked: done
+    }), /*#__PURE__*/_react.default.createElement("label", {
+      htmlFor: "wish".concat(i)
+    }, text));
   })));
 }
 var _default = exports.default = App;
@@ -28985,7 +28991,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63738" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49814" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

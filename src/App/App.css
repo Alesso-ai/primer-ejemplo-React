@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.app {
+  width: 400px;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 1px solid;
+  padding: 0 2rem 2rem 2rem;
+  margin-top: 2rem;
+  background-color: whitesmoke;
+}
+
+.wish-input {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-bottom: 3px dashed grey;
+  padding: 0.5rem;
+}
+
+.wish-input__label {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.wish-input__field {
+  width: 100%;
+  border: 0;
+  padding: 1rem;
+  font-size: 1.2rem;
+
+}
+
+.wish-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wish-list__item {
+  display: flex;
+ font-size: 1.2rem;
+ align-items: center;
+}
+
+.wish-list__item > * + *{
+    margin-left: 1rem;
+}
+
+.wish-list__item input{
+    width: 2rem;
+    height: 2rem;
+}
+
+.wish-list__item--done label{
+    text-decoration: line-through;
+}
