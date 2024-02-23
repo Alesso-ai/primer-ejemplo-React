@@ -2613,9 +2613,7 @@ function App() {
   }, "New wish"), /*#__PURE__*/_react.default.createElement("input", {
     type: "text",
     className: "wish-input__field"
-  }), /*#__PURE__*/_react.default.createElement("button", {
-    className: "wish-input__submit"
-  }, "Add wish")), /*#__PURE__*/_react.default.createElement("ul", {
+  })), /*#__PURE__*/_react.default.createElement("ul", {
     className: "wish-list"
   }, wishes.map(function (_ref, i) {
     var text = _ref.text,
@@ -2630,7 +2628,10 @@ function App() {
     }), /*#__PURE__*/_react.default.createElement("label", {
       htmlFor: "wish".concat(i)
     }, text));
-  })));
+  })), /*#__PURE__*/_react.default.createElement("button", {
+    className: "wish-clear",
+    type: "button"
+  }, " A\xF1adir"));
 }
 var _default = exports.default = App;
 },{"react":"../node_modules/react/index.js","./App.css":"App/App.css"}],"App/index.js":[function(require,module,exports) {

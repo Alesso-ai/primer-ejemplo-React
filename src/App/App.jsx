@@ -16,7 +16,7 @@ function App() {
       <fieldset className="wish-input">
         <legend className="wish-input__label">New wish</legend>
         <input type="text" className="wish-input__field" />
-        <button className="wish-input__submit">Add wish</button>
+        
       </fieldset>
       <ul className="wish-list">
         {wishes.map(({ text, done }, i) => (
@@ -29,6 +29,7 @@ function App() {
           </li>
         ))}
       </ul>
+      <button className="wish-clear" type="button"> Añadir</button>
     </div>
   );
 }
