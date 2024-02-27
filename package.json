@@ -1,16 +1,18 @@
 {
   "name": "primer-ejemplo-react",
   "version": "1.0.0",
-  "description": "Primer proyecto con react",
+  "description": "Primer proyecto con React",
   "main": "index.js",
   "scripts": {
     "start": "parcel ./src/index.html --open",
-    "lint": "eslint --fix ./index.jsx",
+    "lint": "eslint --fix src/**/*.{js, jsx}",
     "format": "prettier --write \"*.{js,jsx,json,css}\""
   },
-  "author": "Alejandro Ruiz Prieto",
+  "author": "Laura",
   "license": "ISC",
   "dependencies": {
+    "classnames": "^2.5.1",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
